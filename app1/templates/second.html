@@ -1,0 +1,12 @@
+{% extends  'home.html' %}
+
+{% block content %}
+
+    <a href="{% url 'turnero:vista1' %}">regresar</a>
+    <ul>
+        {% for productos in productos %}
+            <li>{{ productos.id }}/{{ productos.name }}/{{ productos.cate.name}}</li>
+        {% endfor %}
+
+    </ul>
+{% endblock %}

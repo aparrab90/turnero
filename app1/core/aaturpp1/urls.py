@@ -1,9 +1,11 @@
 from django.urls import path
+from core.aaturpp1.views.category.views import *
 
-from core.aaturpp1.views import myfisrtview
 
+
+app_name = 'turnero'
 urlpatterns = [
-    path('uno/', myfisrtview),
-    path('dos/', myfisrtview)
+    path('categoria/list/', category_lis, name='category_list'),
+
 
 ]
